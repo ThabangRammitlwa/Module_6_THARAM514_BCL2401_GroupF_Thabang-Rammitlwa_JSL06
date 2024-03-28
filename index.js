@@ -23,7 +23,7 @@ function displayMenuItems(menu) {
         menu[category].forEach(item => {
             const listItemElement = document.createElement('li');
             // Set the text content of the list item element to the item name
-            listItemElement.textContent = `${item.name} - R${item.price.toFixed(2)}`;
+            listItemElement.textContent = item.name;
             // Attach a click event listener to the list item to add it to the order
             listItemElement.addEventListener('click', () => {
                 addToOrder(item);
